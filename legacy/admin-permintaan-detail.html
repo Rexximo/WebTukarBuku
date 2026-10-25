@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detail Permintaan TB-0248 — Tukar Buku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <div class="sidebar-brand"><a class="app-brand" href="admin-dashboard.html"><span class="app-mark">tb</span><span>Tukar<em>Buku</em></span></a><span class="sidebar-mobile-title">ADMINISTRATOR</span></div>
+        <p class="sidebar-label">MENU UTAMA</p>
+        <nav class="sidebar-nav" aria-label="Navigasi admin">
+          <a href="admin-dashboard.html"><span class="nav-glyph">▦</span>Dashboard</a>
+          <a href="admin-buku.html"><span class="nav-glyph">▤</span>Kelola Buku</a>
+          <a href="admin-anggota.html"><span class="nav-glyph">♙</span>Kelola Anggota</a>
+          <a class="active" href="admin-permintaan.html"><span class="nav-glyph">↔</span>Permintaan Penukaran</a>
+        </nav>
+        <div class="sidebar-bottom"><div class="admin-profile"><span class="avatar">AD</span><span><strong>Admin Tukar Buku</strong><small>Administrator</small></span></div></div>
+      </aside>
+      <div class="admin-content">
+        <header class="admin-topbar">
+          <div class="breadcrumbs"><a href="admin-dashboard.html">Dashboard</a><span>/</span><a href="admin-permintaan.html">Permintaan Penukaran</a><span>/</span><strong>TB-0248</strong></div>
+          <div class="topbar-right"><a class="member-user" href="admin-dashboard.html"><span class="avatar">AD</span><span>Admin Tukar Buku</span></a><a class="logout-link" href="masuk.html">Keluar</a></div>
+        </header>
+        <main class="admin-main">
+          <div class="page-heading">
+            <div><p class="eyebrow">Tinjau penukaran</p><h1 class="page-title">Permintaan TB-0248</h1><p class="page-subtitle">Diajukan 4 Okt 2026 · Kedaluwarsa 7 Okt 2026</p></div>
+            <span class="badge badge-warning">Menunggu</span>
+          </div>
+          <div class="alert alert-warning" style="margin-bottom:17px"><span aria-hidden="true">!</span><span>Sebelum memproses, periksa buku fisik yang dibawa anggota dan pastikan kondisinya sesuai.</span></div>
+          <div class="detail-columns">
+            <section class="card content-card">
+              <div class="section-card-heading"><div><h2>Buku yang dipilih anggota</h2><p>Buku katalog yang ingin ditukar.</p></div><span class="badge badge-warning">Dipesan</span></div>
+              <div class="admin-request-book"><span class="table-book-cover cover-coral"></span><div><h3>Laut Bercerita</h3><p>Nadira Putri · Fiksi</p><span class="badge badge-neutral">Kondisi: Baik</span></div></div>
+              <div class="section-card-heading" style="margin-top:23px"><div><h2>Buku yang ditawarkan</h2><p>Buku yang akan dibawa anggota ke lokasi admin.</p></div></div>
+              <div class="admin-request-book"><span class="table-book-cover cover-blue"></span><div><h3>Negeri 5 Menara</h3><p>Ahmad Fuadi</p><span class="badge badge-neutral">Kondisi: Baik</span></div></div>
+              <dl class="info-list" style="margin-top:17px">
+                <dt>Catatan anggota</dt><dd>Sampul sedikit aus di bagian sudut, halaman lengkap.</dd>
+                <dt>Nama anggota</dt><dd><a class="text-button" href="admin-anggota-ubah.html">Amelia Putri</a></dd>
+                <dt>Nama pengguna</dt><dd>amelia.putri</dd>
+                <dt>Nomor telepon</dt><dd>0812 3456 7890</dd>
+                <dt>Lokasi pertemuan</dt><dd>Datang langsung ke admin</dd>
+              </dl>
+            </section>
+            <aside class="card content-card">
+              <div class="section-card-heading"><div><h2>Proses Permintaan</h2><p>Keputusan hanya dapat dilakukan admin.</p></div></div>
+              <div class="alert alert-info"><span aria-hidden="true">ⓘ</span><span>Setelah disetujui, buku pilihan menjadi <strong>Sudah Ditukar</strong> dan buku anggota ditambahkan ke katalog.</span></div>
+              <form action="admin-permintaan.html" method="post">
+                <div class="field" style="margin-top:17px"><label for="reject-reason">Alasan jika ditolak <small>(wajib saat menolak)</small></label><textarea class="control" id="reject-reason" name="rejectReason" placeholder="Jelaskan alasan penolakan kepada anggota"></textarea></div>
+                <div class="decision-actions"><button class="button button-primary" type="submit" name="decision" value="selesai">Setujui &amp; Selesaikan</button><button class="button button-danger" type="submit" name="decision" value="ditolak">Tolak Permintaan</button></div>
+              </form>
+              <p class="field-hint" style="margin:12px 0 0">Pastikan buku telah diperiksa langsung sebelum menyelesaikan permintaan.</p>
+            </aside>
+          </div>
+          <div class="page-heading-actions" style="margin-top:17px"><a class="button button-secondary" href="admin-permintaan.html">← Kembali ke permintaan</a></div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

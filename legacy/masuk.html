@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Masuk — Tukar Buku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <main class="login-page">
+      <section class="login-art" aria-label="Tentang Tukar Buku">
+        <a class="app-brand" href="index.html"><span class="app-mark">tb</span><span>Tukar<em>Buku</em></span></a>
+        <div class="login-art-copy"><p class="eyebrow">Komunitas pembaca</p><h1>Satu cerita selesai.<br>Cerita lain menunggu.</h1><p>Temukan bacaan berikutnya dengan bertukar buku bersama komunitas. Tanpa biaya, cukup berbagi cerita.</p><div class="login-book-stack" aria-hidden="true"><span class="login-book"></span><span class="login-book"></span><span class="login-book"></span></div></div>
+        <p class="login-art-foot">Baca lebih banyak. Berbagi lebih jauh.</p>
+      </section>
+      <section class="login-panel" aria-labelledby="login-title">
+        <div class="login-form-wrap">
+          <a class="app-brand" href="index.html"><span class="app-mark">tb</span><span>Tukar<em>Buku</em></span></a>
+          <p class="eyebrow">Selamat datang kembali</p><h2 id="login-title">Masuk ke akun Anda</h2><p class="login-intro">Gunakan nama pengguna dan kata sandi dari admin.</p>
+          <form class="login-form" action="katalog.html" method="post">
+            <div class="field"><label for="username">Nama Pengguna</label><input class="control" id="username" name="username" autocomplete="username" placeholder="Masukkan nama pengguna" required></div>
+            <div class="field"><label for="password">Kata Sandi</label><input class="control" id="password" name="password" type="password" autocomplete="current-password" placeholder="Masukkan kata sandi" required></div>
+            <button class="button button-primary" type="submit">Masuk <span aria-hidden="true">→</span></button>
+          </form>
+          <p class="login-help">Belum memiliki akun? Datang langsung ke admin untuk mendaftar sebagai anggota.</p>
+          <div class="demo-links"><span>Pratinjau halaman:</span><a href="katalog.html">Anggota</a><span aria-hidden="true">·</span><a href="admin-dashboard.html">Admin</a></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
